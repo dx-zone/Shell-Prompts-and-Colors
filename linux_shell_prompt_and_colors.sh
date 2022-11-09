@@ -108,6 +108,19 @@ RPROMPT="%F{241}%T%f"
 # PS1="${FG[226]} --->
 # This will print the ---> in the shell prompt colored as yellow
 
+#######################################
+#
+# BASH Prompt variables to show time/date, user, hostname, shell version, etc.
+PROMPT_ARROW="➜ "
+PROMPT_USER="\u"
+PROMPT_SHORTHOSTNAME="\h"
+PROMPT_FULLHOSTNAME="\H"
+PROMPT_CWD="\W"
+PROMPT_SHELL="\s"
+PROMPT_HISTCMD="\!"
+PROMPT_DATE="\d"
+PROMPT_TIME="\T"
+
 
 #######################################
 # Defining colors variables for BASH
