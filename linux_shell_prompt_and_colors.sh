@@ -120,7 +120,15 @@ PROMPT_SHELL="\s"
 PROMPT_HISTCMD="\!"
 PROMPT_DATE="\d"
 PROMPT_TIME="\T"
+RESET="\[\033[0m\]"
 
+PS1="$PROMPT_ARROW $PROMPT_USER  at  $PROMPT_FULLHOSTNAME  in  $PROMPT_CWD  $PROMPT_TIME  $PROMPT_DATE
+$ $RESET"
+
+#######################################
+#
+# BASH Prompt with command substitution  
+PS1="\[\033[0;33m\][\!]\`if [[ \$? = "0" ]]; then echo "\\[\\033[32m\\]"; else echo "\\[\\033[31m\\]"; fi\`[\u.\h: \`if [[ `pwd|wc -c|tr -d " "` > 18 ]]; then echo "\\W"; else echo "\\w"; fi\`]\$\[\033[0m\] "; echo -ne "\033]0;`hostname -s`:`pwd`\007"
 
 #######################################
 # Defining colors variables for BASH
